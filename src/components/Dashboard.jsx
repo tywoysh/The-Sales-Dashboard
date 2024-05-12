@@ -133,7 +133,7 @@ export default function Dashboard() {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'flex-end',
+              justifyContent: 'flex-start',
               px: [1],
             }}
           >
@@ -191,7 +191,7 @@ export default function Dashboard() {
               </Grid>
               {/* Recent Orders */}
               <Grid item xs={12}>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column', maxHeight: 200, overflow: 'auto' }}>
                   <Orders />
                 </Paper>
               </Grid>
